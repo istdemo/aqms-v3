@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - IST SmartSense</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	  
+	  
+	  
+	  <style>
+	  /* Slider */
+		  
+.carousel-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+		  
+		  .carousel-control-prev, .carousel-control-next
+{
+     display:none;
+}
+		  
+		  
+		  .dropdown:hover .dropdown-menu {
+    display: block;
+}
+		  
+	
+.opacFull {
+  opacity: 1 !important;
+}
+
+.slider-container {
+  width: 100%;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+	
+}
+
+.site-slider {
+  position: relative;
+}
+.site-slider li {
+  line-height: 0;
+  list-style: none;
+}
+
+.slider-img {
+	object-fit: cover;
+  
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  line-height: normal;
+  color: #666666;
+  transform: translateY(-50%);
+}
+.slider-text h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+.slider-text p {
+  font-size: 18px;
+  opacity: 0;
+}
+
+.owl-dots {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  display: block;
+  margin: 10px 0;
+  border-radius: 50%;
+	border:1px solid #48e8a8 !important
+}
+.owl-dots .owl-dot.active {
+  background: #48e8a8 ;
+  transform: scale(1.5);
+}
+
+.animate-in-fast {
+  animation: in-fast 1000ms ease-in-out forwards;
+}
+
+@keyframes in-fast {
+  0% {
+    opacity: 0;
+    transform: translateX(-3em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-in-slow {
+  animation: in-slow 1000ms linear forwards;
+}
+
+@keyframes in-slow {
+  0% {
+    opacity: 0;
+    transform: translateX(3em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}  
+	  </style>
+  </head>
+	
+	
+  <body>
+    <!-- loading -->
+    <div id="loading">
+      <div id="loading-center">
+        <img src="images/loader.gif" alt="loder">
+      </div>
+    </div>
+    <!-- loading End -->
+    <!-- Header-->
+    <header>
+      <!-- <div class="container-fluid sub-header">
+        <div class="row">
+          <div class="col-auto mr-auto">
+            <div class="number-info">
+              <ul>
+                  <li class="email-header"><a href="mailto:support@vizion.com"><i class="fas fa-envelope"></i>support@vizion.com</a></li>
+                  <li class="phone-header"><a href="tel:+0123456789"><i class="fas fa-phone"></i>+0123456789</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-auto sub-main">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="login.html">Login</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="register.html">Register</a></li>
+              </ol>
+              <div class="request-btn"><a href="#">Request a Demo</a></div>
+            </nav>
+          </div>
+        </div>
+      </div> -->
+      <div class="container-fluid main-header">
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="img-fluid logo" alt="img">
+                <img src="images/logo.png" class="img-fluid logo-white" alt="img">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="products.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Our Product
+                    </a>
+                    <div class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="smartsense-enterprise.html">SmartSense EnterPrise</a>
+                      <a class="dropdown-item" href="smartsense-dataLogger.html">SmartSense Data Logger</a>
+                      <a class="dropdown-item" href="smartsense-server.html">SmartSense Server</a>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="use-cases.html">Use Cases</a>
+                  </li>
+            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+								
+                            </li>
+							<li class="nav-item">
+							<a class="btn-grad" href="demo.html">Request Demo</a>
+								</li>
+                </ul>
+              </div>
+              <!-- <div class="sub-main">
+                <ul class="shop_list">
+                    <li class="cart-btn list-inline-item">
+                        <div class="cart_count">
+                            <a class="parents mini-cart-count" href="javascript:void(0)">
+                                <i class="fa fa-shopping-cart"></i>
+                                <div id="mini-cart-count">
+                                    0
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                  <li class="cart-btn list-inline-item">
+                    <div class="cart_count">
+                        <a class="parents mini-cart-count" href="javascript:void(0)">
+                            <i class="fa fa-heart" ></i>
+                            <div id="mini-cart-count">
+                                    0
+                            </div>
+                      </div>
+                  </li>
+                </ul>
+            </div> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header-->
+    <!-- Banner-->
+    <div class="">
+      <div class="">
+		
+		  
+		  <!-- Slider -->
+<section class="slider-section pt-0">
+	 
+	
+    
+<div class="slider-container">
+  <ul class="site-slider">
+    <li>
+      <div class="slider-img"><img src="images/bg/1.jpg" alt="Sldie 1"/></div>
+      <div class="slider-text banner-text">
+		  <h5 class="main-color mb-3">Elevate Your Environment</h5>
+        <h1 class="font-weight-bold">IST Smart Sense</h1>
+        <p class=" mb-4">Next Generation of Air Quality Monitoring with Our Innovative Software Solution.</p>
+		  <div class="align-items-center d-flex">
+                <a class="button" href="tel:+97126355503">Talk to us today</a>
+                <div class="play-video iq-asked-img">
+                  <a href="video/01.mp4" class="iq-video popup-youtube"><i class="ion-ios-play-outline"></i></a>
+                </div>
+              </div>
+      </div>
+    </li>
+    <li>
+      <div class="slider-img"><img src="images/bg/2.jpg" alt="Sldie 2"/></div>
+      <div class="slider-text banner-text">
+		  <h5 class="main-color mb-3">Elevate Your Environment</h5>
+        <h1 class="font-weight-bold">IST Smart Sense</h1>
+        <p class=" mb-4">Next Generation of Air Quality Monitoring with Our Innovative Software Solution.</p>
+		  <div class="align-items-center d-flex">
+                <a class="button" href="tel:+97126355503">Talk to us today</a>
+                <div class="play-video iq-asked-img">
+                  <a href="video/01.mp4" class="iq-video popup-youtube"><i class="ion-ios-play-outline"></i></a>
+                </div>
+              </div>
+      </div>
+    </li>
+    <li>
+      <div class="slider-img"><img src="images/bg/3.jpg" alt="Sldie 3"/></div>
+      <div class="slider-text banner-text">
+		  <h5 class="main-color mb-3">Elevate Your Environment</h5>
+        <h1 class="font-weight-bold">IST Smart Sense</h1>
+        <p class=" mb-4">Next Generation of Air Quality Monitoring with Our Innovative Software Solution.</p>
+		  <div class="align-items-center d-flex">
+                <a class="button" href="tel:+97126355503">Talk to us today</a>
+                <div class="play-video iq-asked-img">
+                  <a href="video/01.mp4" class="iq-video popup-youtube"><i class="ion-ios-play-outline"></i></a>
+                </div>
+              </div>
+      </div>
+    </li>
+  </ul>
+</div>
+	
+	
+    <!--/.Carousel Wrapper--> <!-- End of Carousel -->
+</section> <!-- End of Slider -->
+		  
+  
+  <!-- Full Page Image Background Carousel Header -->
+  
+
+		  
+        <!--<div class="row">
+          <div class="col-lg-6">
+            <div class="banner-text">
+              <h5 class="main-color mb-3">Elevate Your Environment</h5>
+              <h1 class="font-weight-bold  mb-3">IST Smart Sense</h1>
+              <p class=" mb-4">Next Generation of Air Quality Monitoring with Our Innovative Software Solution.</p>
+              <div class="align-items-center d-flex">
+                <a class="button" href="tel:+97126355503">Talk to us today</a>
+                <div class="play-video iq-asked-img">
+                  <a href="video/01.mp4" class="iq-video popup-youtube"><i class="ion-ios-play-outline"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-type wow fadeInRight">
+              <img class="img-fluid banner-person" src="images/banner/03.png" alt="img">
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+    <!-- Banner-->
+    <!--=================================
+    MAIN CONTENT -->
+    <div class="main-content">
+      <!-- How It Works-->
+      <section class="how-it-works conection-shap iq-primary-green">
+        <div class="container">
+          <div class="row d-flex">
+			    <div class="col-sm-12">
+              <div class="title-box">
+                <h2 class="title font-weight-bold">Product Features</h2>
+                <p class="sub-title">Advanced Features for Optimal Air Quality</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 CardIn">
+              <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
+                <div class="future-img">
+                  <img src="images/feature/01.png" class="img-fluid mb-4" alt="">
+                </div>
+                <h4 class="mb-3">SmartSense - Logger</h4>
+                <p class="mb-0">Data logger collecting crucial information of air and water quality at designated sites.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 CardIn">
+              <div class="future-services text-center wow slideInUp" data-wow-duration="1s">
+                <div class="future-img">
+                  <img src="images/feature/02.png" class="img-fluid mb-4" alt="">
+                </div>
+                <h4 class="mb-3">SmartSense - Processor</h4>
+                <p class="mb-0">Data processing layer to analyze and organize data including enrichment of data through correlation.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 CardIn">
+              <div class="future-services text-center wow slideInUp" data-wow-duration="1.5s">
+                <div class="future-img">
+                  <img src="images/feature/03.png" class="img-fluid mb-4" alt="">
+                </div>
+                <h4 class="mb-3">SmartSense - Viewer</h4>
+                <p class="mb-0">View the analyzed data through pre-defined reports delivered as per your requirements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-works conection-shap iq-primary-green">
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-lg-4 col-md-4 CardIn">
+              <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
+                <div class="future-img">
+                  <img src="images/feature/4.png" class="img-fluid mb-4" alt="">
+                </div>
+                <h4 class="mb-3">SmartSense - AI</h4>
+                <p class="mb-0">ChatGPT integrated to data products to empower EAD SME to query large data on demand.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 CardIn">
+              <div class="future-services text-center wow slideInUp" data-wow-duration="1s">
+                <div class="future-img">
+                  <img src="images/feature/5.png" class="img-fluid mb-4" alt="">
+                </div>
+                <h4 class="mb-3">SmartSense - Connect</h4>
+                <p class="mb-0">API’s for providing data connection to other entities for social benefits.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 CardIn">
+              <div class="future-services text-center wow slideInUp" data-wow-duration="1.5s">
+                <div class="future-img">
+                  <img src="images/feature/6.png" class="img-fluid mb-4" alt="">
+                </div>
+                <h4 class="mb-3">SmartSense - Alert</h4>
+                <p class="mb-0">Provide pro-active environmental and health alerts to relevant departments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How It Works-->
+      <!-- Easy Pricing Plans-->
+      <section class="pt-0 finding-shap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="fully-dedicated wow slideInLeft">
+                <img src="images/feature/04.png" class="img-fluid " alt="">
+              </div>
+            </div>
+            <div class="col-md-6 text-left align-self-center">
+              <div class="ml-3 mt-3">
+                <h3 class="font-weight-bold">Experience unparalleled accuracy and real-time data at your fingertips.</h3>
+                <p class="mt-3">Discover a new horizon in air quality monitoring with our innovative software, designed for both outdoor and indoor environments. Empowering you to create healthier spaces.</p>
+                <a class="button mt-3" href="#">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Easy Pricing Plans-->
+      <section class="main-bg counter">
+        <div class="container">
+          <div class="row iq-counter3 text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="iq-counter iq-pt-30 iq-rmb-30">
+                <span class="timer text-white" data-to="1000" data-speed="5000">1000</span>
+                <h6 class="mt-3 text-white">Devices</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="iq-counter iq-pt-30 iq-rmb-30">
+                <span class="timer text-white" data-to="3" data-speed="5000">3</span>
+                <h6 class="mt-3 text-white">Countries</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="iq-counter iq-pt-30 iq-rmb-30">
+                <span class="timer text-white" data-to="250" data-speed="5000">250</span>
+                <h6 class="mt-3 text-white">Stations</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="iq-counter iq-pt-30">
+                <span class="timer text-white" data-to="20" data-speed="5000">20+</span>
+                <h6 class="mt-3 text-white">Years of experience</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get-tips-tricks tricks-shap">
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <div class="col-md-6">
+              <div class="tips-img wow fadeIn animated bounce slower">
+                <img src="images/feature/05.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 text-left align-self-center">
+              <div class="ml-3 mt-3">
+                <h3 class="font-weight-bold">We’re here to help you begin your journey.</h3>
+                <!-- <p class="mt-3">Let’s get started today.</p> -->
+                <a class="button mt-3" href="#">Enquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-provide Service-shap iq-primary-green">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box">
+                <h2 class="title font-weight-bold">Benefits</h2>
+                <p class="sub-title">Breathe Easy with Enhanced Air Safety</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <div class="rplr-30">
+                <div class="future-services services text-center wow slideInUp" data-wow-duration="0.5s">
+                  <div class="future-img">
+                    <img src="images/services/1.png" class="img-fluid mb-4" alt="">
+                  </div>
+                  <h4 class="mb-3">Comprehensive Pollution Oversight</h4>
+                  <p class="mb-0">Accurate, real-time data on diverse pollutants for informed decision-making, including tracking from particulate matter to harmful gases.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 d-flex">
+              <div class="rplr-30 CardIn">
+                <div class="future-services services text-center wow slideInUp" data-wow-duration="1s">
+                  <div class="future-img">
+                    <img src="images/services/2.png" class="img-fluid mb-4" alt="">
+                  </div>
+                  <h4 class="mb-3">Streamlined Regulatory Enforcement</h4>
+                  <p class="mb-0">Real-time compliance checks for industries with actionable evidence backing for regulatory measures.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 d-flex">
+              <div class="rplr-30 CardIn">
+                <div class="future-services services text-center wow slideInUp" data-wow-duration="1.5s">
+                  <div class="future-img">
+                    <img src="images/services/3.png" class="img-fluid mb-4" alt="">
+                  </div>
+                  <h4 class="mb-3">Informed Policy Making</h4>
+                  <p class="mb-0">There are many variations of passages of the have suffered in some form.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 d-flex">
+              <div class="rplr-30 CardIn">
+                <div class="future-services services text-center wow slideInUp" data-wow-duration="0.5s">
+                  <div class="future-img">
+                    <img src="images/services/04.png" class="img-fluid mb-4" alt="">
+                  </div>
+                  <h4 class="mb-3">Public Engagement and Transparency</h4>
+                  <p class="mb-0">Data-driven awareness campaigns integrated into open data platforms for increased transparency.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 d-flex ">
+              <div class="rplr-30 CardIn">
+                <div class="future-services services text-center wow slideInUp" data-wow-duration="1s">
+                  <div class="future-img">
+                    <img src="images/services/05.png" class="img-fluid mb-4" alt="">
+                  </div>
+                  <h4 class="mb-3">Cost-Efficient Monitoring</h4>
+                  <p class="mb-0">Remote monitoring capabilities for resource-saving, coupled with predictive analysis from historical data for efficient resource allocation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 d-flex">
+              <div class="rplr-30 CardIn">
+                <div class="future-services services text-center wow slideInUp" data-wow-duration="1.5s">
+                  <div class="future-img">
+                    <img src="images/services/6.png" class="img-fluid mb-4" alt="">
+                  </div>
+                  <h4 class="mb-3">Supporting Inter-Agency Collaborations</h4>
+                  <p class="mb-0">Facilitates easy data sharing with other governmental bodies, ensuring consistent communication via standardized data collection and reporting.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 mx-auto d-flex">
+                <div class="rplr-30 CardIn">
+                  <div class="future-services services text-center wow slideInUp" data-wow-duration="1.5s">
+                    <div class="future-img">
+                      <img src="images/services/7.png" class="img-fluid mb-4" alt="">
+                    </div>
+                    <h4 class="mb-3">Contribution to Global Environmental Initiatives</h4>
+                    <p class="mb-0">Aids in data collection for international climate change reports, enhancing credibility in international forums due to accurate data reporting.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+        </div>
+      </section>
+      <!--=================================
+      Blog -->
+      <section class="iq-blog pt-0 ">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box">
+                <h2 class="title font-weight-bold">Recent Blog Post</h2>
+                <p class="sub-title">Exploring Innovations and Insights in Air Quality Monitoring Technology</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+             <div class="col-lg-12">
+              <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="3" data-items-laptop="3" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1">
+                <div class="item ml-3">
+							<div class="iq-blog-box">
+							<div class="iq-blog-image clearfix">
+								<img src="images/blog/bl-1.jpg" class="img-fluid center-block" alt="blogimage1">
+							</div>
+							<div class="iq-blog-detail">
+								<div class="iq-blog-meta">
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a href="#" class="iq-user"><i class="fa fa-user" aria-hidden="true"></i>Admin</a>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+											<a href="#" rel="bookmark">March 22, 2024</a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 0</a>
+										</li>
+									</ul>
+								</div>
+								<div class="blog-title">
+									<a href="#">
+										<h6>The Importance of Air Quality Monitoring Systems</h6>
+									</a>
+								</div>
+								<div class="blog-content">
+									<p>Explores the critical role of these systems in safeguarding public health and the environment, detailing their features and benefits.</p>
+								</div>
+								<div class="blog-button"><a class="button" href="#">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+            </div>
+            
+            <div class="item ml-3">
+              
+
+						<!-- <div class="col-lg-4 col-md-6 col-sm-6 Vizion-space-bottom"> -->
+							<div class="iq-blog-box">
+							<div class="iq-blog-image clearfix">
+								<img src="images/blog/bl-2.jpg" class="img-fluid center-block" alt="blogimage1">
+							</div>
+							<div class="iq-blog-detail">
+								<div class="iq-blog-meta">
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a href="#" class="iq-user"><i class="fa fa-user" aria-hidden="true"></i>Admin</a>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+											<a href="#" rel="bookmark">March 21, 2024</a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 0</a>
+										</li>
+									</ul>
+								</div>
+								<div class="blog-title">
+									<a href="#">
+										<h6>Technological Innovations in Air Quality Monitoring</h6>
+									</a>
+								</div>
+								<div class="blog-content">
+									<p>Discusses the latest advancements and how they enhance accuracy, reliability, and real-time data analysis for better decision-making.</p>
+								</div>
+								<div class="blog-button"><a class="button" href="#">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+						<!-- </div> -->
+            </div>
+            
+
+            <div class="item ml-3">
+              
+					
+							<div class="iq-blog-box">
+							<div class="iq-blog-image clearfix">
+								<img src="images/blog/bl-3.jpg" class="img-fluid center-block" alt="blogimage1">
+							</div>
+							<div class="iq-blog-detail">
+								<div class="iq-blog-meta">
+									<ul class="list-inline">
+										<li class="list-inline-item">
+											<a href="#" class="iq-user"><i class="fa fa-user" aria-hidden="true"></i>Admin</a>
+										</li>
+										<li class="list-inline-item">
+											<i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+											<a href="#" rel="bookmark">February 12, 2024</a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 0</a>
+										</li>
+									</ul>
+								</div>
+								<div class="blog-title">
+									<a href="#">
+										<h6>Urban Air Quality Challenges and Solutions</h6>
+									</a>
+								</div>
+								<div class="blog-content">
+									<p>Addresses the unique challenges faced in urban environments and how monitoring systems help mitigate pollution levels.</p>
+								</div>
+								<div class="blog-button"><a class="button" href="#">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					
+            </div>
+            
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=================================
+      Blog -->
+      <!--================================= Clients -->
+      <section class="iq-clients pt-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box">
+                <h2 class="title font-weight-bold">Our Customers</h2>
+                <p class="sub-title">Our valued clients come from diverse industries, ranging from technology and finance to healthcare and retail. We are proud to serve each of them with tailored solutions that meet their unique needs and challenges.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="false" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1">
+                <div class="item">
+                  <div class="clients-box">
+                    <img class="img-fluid client-img" src="images/clients/clients-img1.svg" alt="image" data-toggle="tooltip" title="ADNOC">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="clients-box">
+                    <img class="img-fluid client-img" src="images/clients/clients-img2.jpg" alt="image" data-toggle="tooltip" title="Qatar Energy">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="clients-box">
+                    <img class="img-fluid client-img" src="images/clients/clients-img3.svg" alt="image" data-toggle="tooltip" title="Masdar City">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="clients-box">
+                    <img class="img-fluid client-img" src="images/clients/clients-img4.svg" alt="image" data-toggle="tooltip" title="Dubai Pulse">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="clients-box">
+                    <img class="img-fluid client-img" src="images/clients/clients-img5.svg" alt="image" data-toggle="tooltip" title="Environmental Agency Abu Dhabi">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="clients-box">
+                    <img class="img-fluid client-img" src="images/clients/clients-img6.svg" alt="image" data-toggle="tooltip" title="Health Authority Abu Dhabi">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="clients-box">
+                    <img class="img-fluid client-img" src="images/clients/clients-img7.svg" alt="image" data-toggle="tooltip" title="Department of Municipalities and Transport">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--=================================
+    MAIN CONTENT -->
+    <!--================================= Our Partners -->
+    <!--================================= Clients -->
+    <section class="iq-clients pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box">
+              <h2 class="title font-weight-bold">Our Partners</h2>
+              <p class="sub-title">We collaborate with leading organizations and industry experts to deliver innovative solutions and drive mutual success. Together, we strive to create synergies that benefit our clients and propel our industries forward.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="owl-carousel d-flex justify-content-center" data-autoplay="true" data-loop="true" data-nav="false" data-dots="false" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1" >
+              <div class="item">
+                <div class="clients-box">
+                  <img class="img-fluid client-img" src="images/clients/clients-img3.svg" alt="image" data-toggle="tooltip" title="AIMS">
+                </div>
+              </div>
+              <div class="item">
+                <div class="clients-box">
+                  <img class="img-fluid client-img" src="images/clients/clients-img4.svg" alt="image" data-toggle="tooltip" title="du">
+                </div>
+              </div>
+              <div class="item">
+                <div class="clients-box">
+                  <img class="img-fluid client-img" src="images/clients/clients-img5.svg" alt="image" data-toggle="tooltip" title="IST">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--=================================
+  MAIN CONTENT -->
+  <!--=================================
+  Clients -->
+  <!-- Footer start-->
+  <footer id="contact" class="main-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-auto mr-md-auto mb-3 mb-md-0">
+          <div class="footer-logo">
+            <a href="index.html"><img src="images/logo-white.png" alt="img"></a>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <ul class="nav footer-menu justify-content-center justify-content-md-start">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Our Product</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="use-cases.html">Use Case</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="pt-5">
+      <div class="pt-3">
+        <div class="row justify-content-between">
+          <div class="col-auto mr-auto">
+            <h6 class="text-white iq-font-50"><span>Developed by</span><a href="https://www.ispatialtec.com/"> iSpatial Techno Solutions</a></h6>
+          </div>
+          <div class="col-auto">
+            <div class="social-icon">
+              <ul>
+                <li class="d-inline"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="d-inline"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="d-inline"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- back-to-top -->
+    <div id="back-to-top">
+      <a class="top" id="top" href="#top"><span>Scroll Up</span> <i class="ion-ios-arrow-thin-up"></i></a>
+    </div>
+    <!-- back-to-top End -->
+    <!--=================================
+       Cookies -->
+    <div id="cookie_div" class="align-items-center"> We use cookies to give you tailored experiences on our website.
+        <a class="button grey text-right ml-3" href="#" role="button" id="cookie">Accept </a>
+    </div>
+     <!--=================================
+        Cookies -->
+  </footer>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.js"></script>
+    <script src="https://finbyz.tech/assets/finbyzweb/js/combine.min.js"></script>
+    <!-- main -->
+    <script src="js/main.js"></script>
+    <!--custom -->
+    <script src="js/custom.js"></script>
+	
+	<script>
+	$('#carousel-example-2').carousel({
+  interval: 3000,
+  cycle: true
+}); 
+		
+		$(document).ready(function(){
+
+  $('.site-slider').owlCarousel({
+		loop: true,
+		auto: true,
+		dots: true,
+    mouseDrag: false,
+		autoplay: true,
+    items: 1,
+		nav: false,
+    onTranslated: function() {
+        var $slideHeading = $('.site-slider .owl-item.active .slider-text h3');
+        var $slidePara = $('.site-slider .owl-item.active .slider-text p');
+
+        $slideHeading.addClass('animate-in-fast').on('animationend', function(){
+          $slideHeading.removeClass('animate-in-fast').addClass('opacFull');
+        });
+
+        $slidePara.addClass('animate-in-slow').on('animationend', function(){
+          $slidePara.removeClass('animate-in-slow').addClass('opacFull');
+        });
+      },
+    onChange: function(){
+      var $slideHeading = $('.site-slider .owl-item.active .slider-text h3');
+      var $slidePara = $('.site-slider .owl-item.active .slider-text p');
+
+      $slideHeading.removeClass('opacFull');
+      $slidePara.removeClass('opacFull');
+
+    }
+  	});
+  });
+
+$(window).on('load', function(){
+  var $slideHeading = $('.site-slider .owl-item.active .slider-text h3');
+  var $slidePara = $('.site-slider .owl-item.active .slider-text p');
+
+  $slideHeading.addClass('animate-in-fast').on('animationend', function(){
+    $slideHeading.removeClass('animate-in-fast').addClass('opacFull');
+  });
+
+  $slidePara.addClass('animate-in-slow').on('animationend', function(){
+    $slidePara.removeClass('animate-in-slow').addClass('opacFull');
+  });
+});
+
+
+	</script>
+  </body>
+</html>
